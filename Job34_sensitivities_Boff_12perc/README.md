@@ -1,4 +1,4 @@
-The objective of this simulation setup is to obtain 2-electron topology simulations. 
+The objective of this simulation setup is to **obtain 2-electron topology simulations**. 
 
 ## The simulation setup is the following: 
 - Use `realistic_flat` source foil geometry (afaik the curved foils geometry is not exactly compatible across all analyses, correct me if I'm wrong)
@@ -29,3 +29,20 @@ useEventHasPextBelow : boolean = true   # external probability ToF cut
 maxPext : real = 0.01
 ```
 
+Output `root` file contains:
+```c++
+float phi;
+
+float reconstructedEnergy1;
+float reconstructedEnergy2;
+
+float trackLength1;
+float trackLength2;
+
+float x1Reconstructed;
+float y1Reconstructed;
+float z1Reconstructed;
+float x2Reconstructed;
+float y2Reconstructed;
+float z2Reconstructed;
+```
